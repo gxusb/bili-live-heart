@@ -7,11 +7,10 @@ ENV SERVER_CHAN_SENDKEY=""
 ENV TZ="Asia/Shanghai"
 
 RUN sed -i 's/deb.debian.org/mirrors.ustc.edu.cn/g' /etc/apt/sources.list \
-	&& apt-get update \
-	&& apt-get install -y --no-install-recommends git g++ \
-	&& rm -rf /var/lib/apt/lists/* \
-    && pip install --upgrade pip \
-	&& git clone https://github.com/gxusb/bili-live-heart.git /app
+    && apt-get update \
+    && apt-get install -y --no-install-recommends git g++ \
+    && rm -rf /var/lib/apt/lists/* \
+    && git clone https://github.com/gxusb/bili-live-heart.git /app
 
 WORKDIR /app
 
