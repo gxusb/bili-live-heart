@@ -1,0 +1,13 @@
+version: "3"
+services:
+  bili-live-heart:
+    image: gxggxl/bili-live-heart
+    container_name: bili-live-heart
+    deploy:
+      resources:
+        limits:
+          cpus: '0.2'
+          memory: 128M
+    env_file: ./env.list
+    tty: true
+    restart: always
