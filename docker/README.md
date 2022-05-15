@@ -37,5 +37,5 @@ docker-compose -f docker-compose.yml up -d
 ```
 ```bash
 #创建目录bili-live-heart 并下载 docker-compose.yml env.list
-mkdir /root/bili-live-heart && cd /root/bili-live-heart && wget https://raw.githubusercontent.com/gxusb/bili-live-heart/master/docker/docker-compose.yml && wget https://raw.githubusercontent.com/gxusb/bili-live-heart/master/docker/env.list
+mkdir /root/bili-live-heart && cd /root/bili-live-heart && wget https://git.gxggxl.workers.dev/https://raw.githubusercontent.com/gxusb/bili-live-heart/master/docker/docker-compose.yml && wget https://git.gxggxl.workers.dev/https://raw.githubusercontent.com/gxusb/bili-live-heart/master/docker/env.list
 ```
