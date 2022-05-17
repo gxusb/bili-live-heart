@@ -70,7 +70,7 @@ class BiliUser:
         :return:
         """
         try:
-            url = "https://git.gxggxl.workers.dev/https://raw.githubusercontent.com/gxusb/bili-live-heart/master/version.json"
+            url = "https://cdn.jsdelivr.net/gh/gxusb/bili-live-heart@latest/version.json"
             res = await self.session.get(url)
             version_data = json.loads(await res.text())
             if __VERSION__ == version_data["version"]:
